@@ -1,5 +1,4 @@
-FROM almalinux:8.6-minimal
+FROM almalinux:8.6
 
 
-RUN dnf update
-RUN dnf -y install curl, tar, unzip, git
+RUN dnf update && dnf -y install curl, tar, unzip, git
